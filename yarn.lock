@@ -1166,6 +1166,11 @@
   resolved "https://registry.yarnpkg.com/@duetds/fonts/-/fonts-1.3.14.tgz#df8fca4ecebe6e7cc1c28c66a573a8244f5e1073"
   integrity sha512-9MffLOUa23luoNu7NnkF/age74P+CUMqshgBx0DBiFnXn2jS4ow4U9C3OVutVqVLR+qoEnyHd71lS69By+WLdQ==
 
+"@duetds/icons@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@duetds/icons/-/icons-2.1.1.tgz#2e9a6a15ab72b6bb9b9928e2fc38a5a2dfd06d8b"
+  integrity sha512-MT0KapyTHr/dyp7FqX404/hTnf7tCldVb2LSSqfmAjawp34fzUPZQSfacQW8+1gx4HmO5pwvZigOcQH0DV76ZQ==
+
 "@electron/get@^1.0.1":
   version "1.12.4"
   resolved "https://registry.npmjs.org/@electron/get/-/get-1.12.4.tgz"
@@ -1710,10 +1715,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@teliads/components@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.npmjs.org/@teliads/components/-/components-0.1.5.tgz"
-  integrity sha512-1Oo3cLbChl4r5KDUHxusw1dWcqdktRuu9LbQEt3W1qhxIqS6neD/JGo+875swEmJvUlNeaExNK9IYPq+W39d7A==
+"@teliads/components@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@teliads/components/-/components-0.1.6.tgz#51fc84c9313e878d7395ce46ad5fc6fdd4102caf"
+  integrity sha512-k9pssOh2aijTMuYSjPzG9MR/YkbIWy6Xgb1tTHSNRl/YpUarkuIiju0HC90wHMG/NFHuGB10kKzt4WNp1wKWGg==
 
 "@testing-library/dom@^7.28.1":
   version "7.30.1"

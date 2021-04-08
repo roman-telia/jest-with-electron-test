@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import {TeliaButton, TeliaCol, TeliaGrid, TeliaRow, TeliaHeading} from '@teliads/components/react';
+import {TeliaButton, TeliaCol, TeliaGrid, TeliaRow, TeliaHeading, TeliaP, TeliaLink} from '@teliads/components/react';
 import './App.css';
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         </TeliaRow>
       </TeliaGrid>
       <TeliaButton variant="primary" id="telia-button" dataTestid="telia-button" children="Hi there"></TeliaButton>
+      <TeliaP>loerm sddds dss sswew <TeliaLink href="https://www.telia.fi" variant="silent">Here</TeliaLink></TeliaP>
       
     </div>
   );
