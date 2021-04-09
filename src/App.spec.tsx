@@ -57,8 +57,6 @@ function setup() {
   }
 }
 
-// --snip--
-
 describe('TeliaColorDot Component', () => {
   it('should render with props', () => {
     const propsObject = {"color": "pink", "dateTestid": "colordot-1", "forwardedRef": null, "withborder": true};
