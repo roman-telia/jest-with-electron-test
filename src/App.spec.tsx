@@ -45,27 +45,32 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
-import App from './App';
-import {TeliaColorDot} from '@teliads/components/react/commonjs';
+import {TeliaColorDot, TeliaButton} from '@teliads/components/react/commonjs';
 
 Enzyme.configure({ adapter: new Adapter() });
 function setup() {
-  const component = shallow(<TeliaColorDot color="pink" withborder={true} />);
+  const TeliaColorDotComponent = shallow(<TeliaColorDot color="pink" withborder={true} dateTestid="colordot-1" />);
+  const TeliaButtonComponent = shallow(<TeliaButton variant="primary" dataTestid="button-1">Click me</TeliaButton>);
   return {
-    component,
-    div: component.find('div'),
-  };
+    TeliaColorDotComponent,
+    TeliaButtonComponent
+  }
 }
 
 // --snip--
 
-describe('App Component', () => {
-  it('should match exact snapshot', () => {
-    const ColorDot = (
-      <TeliaColorDot color="pink" withborder={true} />
-    );
-    const tree = renderer.create(ColorDot).toJSON();
+describe('TeliaColorDot Component', () => {
+  it('should render with props', () => {
+    const propsObject = {"color": "pink", "dateTestid": "colordot-1", "forwardedRef": null, "withborder": true};
+    const component = setup();
+    expect(component.TeliaColorDotComponent.getElement().props).toMatchObject(propsObject);
+  });
+});
 
-    expect(tree).toMatchSnapshot();
+describe('TeliaButton Component', () => {
+  it('should render with props', () => {
+    const propsObject = {"variant": "primary", "dataTestid": "button-1", "forwardedRef": null};
+    const component = setup();
+    expect(component.TeliaButtonComponent.getElement().props).toMatchObject(propsObject);
   });
 });

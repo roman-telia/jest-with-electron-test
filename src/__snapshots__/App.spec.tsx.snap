@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`App Component should match exact snapshot 1`] = `
-<telia-color-dot
-  color="pink"
-  withborder={true}
-/>
-`;
