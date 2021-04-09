@@ -41,7 +41,6 @@
 //     });
 // });
 
-import { spy } from 'sinon';
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -51,17 +50,10 @@ import {TeliaColorDot} from '@teliads/components/react/commonjs';
 
 Enzyme.configure({ adapter: new Adapter() });
 function setup() {
-  const actions = {
-    increment: spy(),
-    incrementIfOdd: spy(),
-    incrementAsync: spy(),
-    decrement: spy()
-  };
   const component = shallow(<TeliaColorDot color="pink" withborder={true} />);
   return {
     component,
-    actions,
-    buttons: component.find('div'),
+    div: component.find('div'),
   };
 }
 
@@ -69,11 +61,10 @@ function setup() {
 
 describe('App Component', () => {
   it('should match exact snapshot', () => {
-    const { actions } = setup();
-    const counter = (
+    const ColorDot = (
       <TeliaColorDot color="pink" withborder={true} />
     );
-    const tree = renderer.create(counter).toJSON();
+    const tree = renderer.create(ColorDot).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
