@@ -48,6 +48,12 @@
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.8",
-    "construct-style-sheets-polyfill": "^2.4.16"
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/react-test-renderer": "^17.0.1",
+    "@types/sinon": "^9.0.11",
+    "construct-style-sheets-polyfill": "^2.4.16",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "react-test-renderer": "^17.0.2",
+    "sinon": "^10.0.1"
   }
 }

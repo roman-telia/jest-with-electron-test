@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import {TeliaButton, TeliaCol, TeliaGrid, TeliaRow, TeliaHeading, TeliaP, TeliaLink} from '@teliads/components/react';
+import {TeliaButton, TeliaCol, TeliaGrid, TeliaRow, TeliaHeading, TeliaP, TeliaLink} from '@teliads/components/react/commonjs';
 import './App.css';
 
 function App() {
