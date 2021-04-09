@@ -47,6 +47,7 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 import App from './App';
+import {TeliaColorDot} from '@teliads/components/react/commonjs';
 
 Enzyme.configure({ adapter: new Adapter() });
 function setup() {
@@ -56,11 +57,11 @@ function setup() {
     incrementAsync: spy(),
     decrement: spy()
   };
-  const component = shallow(<App />);
+  const component = shallow(<TeliaColorDot color="pink" withborder={true} />);
   return {
     component,
     actions,
-    buttons: component.find('button'),
+    buttons: component.find('div'),
   };
 }
 
@@ -70,7 +71,7 @@ describe('App Component', () => {
   it('should match exact snapshot', () => {
     const { actions } = setup();
     const counter = (
-      <App />
+      <TeliaColorDot color="pink" withborder={true} />
     );
     const tree = renderer.create(counter).toJSON();
 
