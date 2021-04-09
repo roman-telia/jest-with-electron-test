@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import {TeliaButton, TeliaCol, TeliaGrid, TeliaRow, TeliaHeading, TeliaP, TeliaLink} from '@teliads/components/react/commonjs';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <h1 className="pebble">Pebble h1 tag</h1>
       <TeliaGrid>
         <TeliaRow>
         <TeliaCol width={12}><TeliaHeading variant="display-200" tag="h1">Display 200 H1</TeliaHeading></TeliaCol>
