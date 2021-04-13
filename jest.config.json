@@ -1,0 +1,11 @@
+{
+  "transform": {
+    "^.+\\.[t|j]sx?$": "babel-jest"
+  },
+  "preset": "ts-jest",
+  "runner": "jest-electron/runner",
+  "testEnvironment": "jest-electron/environment",
+  "collectCoverage": true,
+  "setupFiles": ["construct-style-sheets-polyfill"],
+  "transformIgnorePatterns": ["/node_modules\/(?!@teliads/components/react/esm)(.*)"]
+}

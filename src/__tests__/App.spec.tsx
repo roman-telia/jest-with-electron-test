@@ -44,8 +44,7 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import renderer from 'react-test-renderer';
-import {TeliaColorDot, TeliaButton} from '@teliads/components/react/commonjs';
+import {TeliaColorDot, TeliaButton} from '@teliads/components/react';
 
 Enzyme.configure({ adapter: new Adapter() });
 function setup() {
